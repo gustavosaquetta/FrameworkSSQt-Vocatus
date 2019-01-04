@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Contato</class>
+ <widget class="QWidget" name="Contato">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de contato</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <widget class="QFrame" name="frm_empresa">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="title">
+             <string>Contato</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="3" column="0">
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="3">
+                <widget class="QLineEdit" name="nome"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QSpinBox" name="codigo">
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::NoButtons</enum>
+                 </property>
+                 <property name="keyboardTracking">
+                  <bool>true</bool>
+                 </property>
+                 <property name="maximum">
+                  <number>999999999</number>
+                 </property>
+                 <property name="displayIntegerBase">
+                  <number>10</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Nome</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>Código</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Data de cadastro</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Telefone</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLineEdit" name="telefone"/>
+               </item>
+               <item row="2" column="4">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>E-mail</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>Fone empresarial</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="celular"/>
+               </item>
+               <item row="0" column="5">
+                <widget class="QDateEdit" name="data_cad">
+                 <property name="whatsThis">
+                  <string>date</string>
+                 </property>
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                 <property name="showGroupSeparator" stdset="0">
+                  <bool>false</bool>
+                 </property>
+                 <property name="displayFormat">
+                  <string>dd/MM/yyyy</string>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="fax"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>Celular</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>Fax</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="6">
+                <widget class="QCheckBox" name="padrao">
+                 <property name="text">
+                  <string>Padrão</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="5" colspan="2">
+                <widget class="QLineEdit" name="telefone_empresarial"/>
+               </item>
+               <item row="2" column="5" colspan="2">
+                <widget class="QLineEdit" name="email"/>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>Skype</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLineEdit" name="skype"/>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Observações:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QTextEdit" name="observacoes"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>codigo</tabstop>
+  <tabstop>nome</tabstop>
+  <tabstop>data_cad</tabstop>
+  <tabstop>padrao</tabstop>
+  <tabstop>celular</tabstop>
+  <tabstop>telefone</tabstop>
+  <tabstop>telefone_empresarial</tabstop>
+  <tabstop>fax</tabstop>
+  <tabstop>skype</tabstop>
+  <tabstop>email</tabstop>
+  <tabstop>observacoes</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

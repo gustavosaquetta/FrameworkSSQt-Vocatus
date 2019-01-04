@@ -1,0 +1,4 @@
+peewee==2.10.1
+psutil==5.2.2
+PyQt5==5.9
+reportlab==3.4.0

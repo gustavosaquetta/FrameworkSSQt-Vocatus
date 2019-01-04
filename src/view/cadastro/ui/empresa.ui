@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Empresa</class>
+ <widget class="QWidget" name="Empresa">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de empresas</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <widget class="QFrame" name="frm_empresa">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="title">
+             <string>Informações</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="1" column="0">
+              <widget class="QTabWidget" name="tabWidget">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="tab">
+                <attribute name="title">
+                 <string>Dados</string>
+                </attribute>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="2" column="2">
+                    <widget class="QLabel" name="label_12">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>Bairro</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="0">
+                    <widget class="QLabel" name="label_16">
+                     <property name="text">
+                      <string>Insc. Municipal</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Complemento</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="logradouro"/>
+                   </item>
+                   <item row="5" column="3">
+                    <widget class="QDateEdit" name="data_cad">
+                     <property name="whatsThis">
+                      <string>date</string>
+                     </property>
+                     <property name="displayFormat">
+                      <string>dd/MM/yyyy</string>
+                     </property>
+                     <property name="calendarPopup">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="2">
+                    <widget class="QLabel" name="label_17">
+                     <property name="text">
+                      <string>Data Ini. Ativ.</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>Logradouro</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>CEP</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="cpf"/>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>País</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="2">
+                    <widget class="QLabel" name="label_15">
+                     <property name="text">
+                      <string>Insc. Estadual</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="8" column="0">
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>CNAE</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>Número</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="cep">
+                     <property name="inputMask">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="9" column="0">
+                    <widget class="QLabel" name="label_18">
+                     <property name="text">
+                      <string>Atuação</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>Município</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1" colspan="3">
+                    <widget class="QLineEdit" name="complemento"/>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>CNPJ</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="3">
+                    <widget class="QLineEdit" name="inscricao_estadual"/>
+                   </item>
+                   <item row="6" column="1">
+                    <widget class="QLineEdit" name="inscricao_municipal"/>
+                   </item>
+                   <item row="2" column="3">
+                    <widget class="QLineEdit" name="bairro"/>
+                   </item>
+                   <item row="3" column="1" colspan="3">
+                    <layout class="QVBoxLayout" name="verticalLayoutLookupMunicipio"/>
+                   </item>
+                   <item row="4" column="1" colspan="3">
+                    <layout class="QVBoxLayout" name="verticalLayoutLookupPais"/>
+                   </item>
+                   <item row="8" column="1" colspan="3">
+                    <layout class="QVBoxLayout" name="verticalLayoutLookupCnae"/>
+                   </item>
+                   <item row="9" column="1" colspan="3">
+                    <widget class="QWidget" name="widget" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>21</height>
+                      </size>
+                     </property>
+                     <widget class="QRadioButton" name="atuacao_3">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>68</width>
+                        <height>17</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Varejo</string>
+                      </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                     <widget class="QRadioButton" name="atuacao_1">
+                      <property name="geometry">
+                       <rect>
+                        <x>80</x>
+                        <y>0</y>
+                        <width>81</width>
+                        <height>17</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Atacado</string>
+                      </property>
+                     </widget>
+                     <widget class="QRadioButton" name="atuacao_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>170</x>
+                        <y>0</y>
+                        <width>82</width>
+                        <height>17</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Liberal</string>
+                      </property>
+                     </widget>
+                    </widget>
+                   </item>
+                   <item row="0" column="3">
+                    <widget class="QSpinBox" name="numero">
+                     <property name="buttonSymbols">
+                      <enum>QAbstractSpinBox::NoButtons</enum>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>999999999</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_2">
+                <attribute name="title">
+                 <string>Contato</string>
+                </attribute>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QTreeWidget" name="tv_contato">
+                   <column>
+                    <property name="text">
+                     <string notr="true">1</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayoutMasterDetalhe"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="3">
+                <widget class="QLineEdit" name="apelido"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QSpinBox" name="codigo">
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::NoButtons</enum>
+                 </property>
+                 <property name="keyboardTracking">
+                  <bool>true</bool>
+                 </property>
+                 <property name="maximum">
+                  <number>999999999</number>
+                 </property>
+                 <property name="displayIntegerBase">
+                  <number>10</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" colspan="4">
+                <widget class="QLineEdit" name="nome"/>
+               </item>
+               <item row="2" column="1" colspan="4">
+                <widget class="QLineEdit" name="razao_social"/>
+               </item>
+               <item row="3" column="1" colspan="4">
+                <layout class="QVBoxLayout" name="verticalLayoutLookupGrupo"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Razão social    </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Nome</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Apelido</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>Código</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Grupo</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QWidget" name="widget_2" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>250</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <widget class="QRadioButton" name="tipo_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>120</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Pessoa Jurídica</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="tipo_1">
+                  <property name="geometry">
+                   <rect>
+                    <x>140</x>
+                    <y>0</y>
+                    <width>107</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Pessoa Física</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>codigo</tabstop>
+  <tabstop>apelido</tabstop>
+  <tabstop>tipo_2</tabstop>
+  <tabstop>tipo_1</tabstop>
+  <tabstop>nome</tabstop>
+  <tabstop>razao_social</tabstop>
+  <tabstop>logradouro</tabstop>
+  <tabstop>numero</tabstop>
+  <tabstop>complemento</tabstop>
+  <tabstop>cep</tabstop>
+  <tabstop>bairro</tabstop>
+  <tabstop>cpf</tabstop>
+  <tabstop>data_cad</tabstop>
+  <tabstop>inscricao_municipal</tabstop>
+  <tabstop>inscricao_estadual</tabstop>
+  <tabstop>atuacao_3</tabstop>
+  <tabstop>atuacao_1</tabstop>
+  <tabstop>atuacao_2</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tv_contato</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
